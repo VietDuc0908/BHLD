@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace BHLD.Data.Repositories
 {
-    public interface Ihu_wardRepository
+    public interface Iot_other_list_typeRepository
     {
 
     }
-    public class hu_wardRepository : RepositoryBase<hu_ward>, Ihu_wardRepository
+    public class ot_other_list_typeRepository : RepositoryBase<ot_other_list_type>, Iot_other_list_typeRepository
     {
-        public hu_wardRepository(IDbFactory dbFactory) : base(dbFactory)
+        public ot_other_list_typeRepository(IDbFactory dbFactory) : base(dbFactory)
         {
 
         }

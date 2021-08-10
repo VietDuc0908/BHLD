@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QLBHLD.Model.Models
+namespace BHLD.Model.Models
 {
     [Table("se_function_group")]
     public class se_function_group : Auditable

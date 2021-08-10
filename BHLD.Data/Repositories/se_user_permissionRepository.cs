@@ -8,16 +8,15 @@ using System.Threading.Tasks;
 
 namespace BHLD.Data.Repositories
 {
-    public interface Ihu_wardRepository
+    public interface Ise_user_permissionRepository
     {
 
     }
-    public class hu_wardRepository : RepositoryBase<hu_ward>, Ihu_wardRepository
+    public class se_user_permissionRepository : RepositoryBase<se_user_permission>, Ise_user_permissionRepository
     {
-        public hu_wardRepository(IDbFactory dbFactory) : base(dbFactory)
+        public se_user_permissionRepository(IDbFactory dbFactory) : base(dbFactory)
         {
 
         }
     }
 }
-

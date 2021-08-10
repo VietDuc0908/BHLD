@@ -8,16 +8,17 @@ using System.Threading.Tasks;
 
 namespace BHLD.Data.Repositories
 {
-    public interface Ihu_wardRepository
+    public interface Ise_function_groupRepository
     {
 
     }
-    public class hu_wardRepository : RepositoryBase<hu_ward>, Ihu_wardRepository
+    public class se_function_groupRepository : RepositoryBase<se_function_group>, Iot_other_list_typeRepository
     {
-        public hu_wardRepository(IDbFactory dbFactory) : base(dbFactory)
+        public se_function_groupRepository(IDbFactory dbFactory) : base(dbFactory)
         {
 
         }
     }
 }
+
 

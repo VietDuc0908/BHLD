@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QHLD.Model.Models
+namespace BHLD.Model.Models
 {
     [Table("ot_other_list_type")]
     public class ot_other_list_type : Auditable
