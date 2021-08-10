@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace BHLD.Data.Infrastructure
 {
-    public interface IDbFactory : IDisposable
+    public interface IUnitOfWork
     {
-        BHLDDbContext Init();
+        void Commit();
     }
 }

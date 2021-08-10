@@ -6,8 +6,19 @@ using System.Threading.Tasks;
 
 namespace BHLD.Data.Infrastructure
 {
-    public class DbFactory : IDbFactory
+    public class DbFactory : Disposable, IDbFactory
     {
-        private bhldDBContext dbContext;
+        private BHLDDbContext dbContext;
+
+        public BHLDDbContext Init()
+        {
+            return dbContext ?? (dbContext = new BHLDDbContext());
+        }
+
+        protected override void DisposeCore()
+        {
+            if (dbContext != null)
+                dbContext.Dispose();
+        }
     }
 }
