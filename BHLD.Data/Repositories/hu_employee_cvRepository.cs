@@ -17,5 +17,15 @@ namespace BHLD.Data.Repositories
         {
 
         }
+
+        public void Update(hu_employee_cv post)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Add(hu_employee_cv post)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

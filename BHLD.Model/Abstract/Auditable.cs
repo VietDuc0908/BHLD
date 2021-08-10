@@ -19,6 +19,7 @@ namespace BHLD.Model.Abstract
         public string created_log { get; set; }
 
         public DateTime? modified_date { get; set; }
+        public bool status { set; get; }
 
     }
 }

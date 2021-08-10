@@ -11,7 +11,7 @@ namespace BHLD.Data.Infrastructure
     public abstract class RepositoryBase<T> : IRepository<T> where T : class
     {
         #region Properties
-        private bhldDBContext dataContext;
+        private BHLDDbContext dataContext;
         private readonly IDbSet<T> dbSet;
         protected IDbFactory DbFactory
         {
@@ -19,7 +19,7 @@ namespace BHLD.Data.Infrastructure
             private set;
         }
 
-        protected bhldDBContext DbContext
+        protected BHLDDbContext DbContext
         {
             get { return dataContext ?? (dataContext = DbFactory.Init()); }
         }

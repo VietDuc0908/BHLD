@@ -18,6 +18,16 @@ namespace BHLD.Data.Repositories
         {
 
         }
+
+        public void Add(se_function post)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(se_function post)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 
