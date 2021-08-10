@@ -15,6 +15,7 @@ namespace BHLD.Model.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
+
         public int gender { get; set; }
 
         //size bàn chân từ
@@ -24,10 +25,16 @@ namespace BHLD.Model.Models
         public int size_to { get; set; }
         
         //shoes size 
-        [ForeignKey("size_id")]
         public int size_id { get; set; }
+
+        [ForeignKey("size_id")]
+        public virtual hu_shoes_size Hu_Shoes_Size { get; set; }
 
         [StringLength(1023)]
         public string remark { get; set; }
+
+        [StringLength(1)]
+        public string actfg { get; set; }
+
     }
 }

@@ -16,17 +16,27 @@ namespace BHLD.Model.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string code { get; set; }
 
+        [Required]
         [StringLength(255)]
         public string province_name { get; set; }
 
         //Mã quốc gia
-        //[ForeignKey("nation_id")]
+       
         public int nation_id { get; set; }
+
+        [ForeignKey("nation_id")]
+        public virtual hu_nation hu_nation{ get; set; }
 
         [StringLength(1023)]
         public string remark { get; set; }
+
+        [StringLength(1)]
+        public string actflg { get; set; }
+
+        public virtual IEnumerable<hu_district> hu_districts { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace BHLD.Model.Abstract
 {
     public interface IAuditable
     {
-        string actflg { get; set; }
+
         string created_by { get; set; }
 
         DateTime? created_date { get; set; }

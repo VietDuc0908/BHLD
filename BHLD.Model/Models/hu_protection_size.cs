@@ -17,15 +17,20 @@ namespace BHLD.Model.Models
         public int id { get; set; }
 
         //Mã size
+        [Required]
         [StringLength(50)]
         public string code { get; set; }
 
         //Tên size bảo hộ 
         //eg: S, M ,L ,...
+        [Required]
         [StringLength(255)]
         public string size_name { get; set; }
 
         [StringLength(1023)]
         public string remark { get; set; }
+
+        [StringLength(1)]
+        public string actflg { get; set; }
     }
 }

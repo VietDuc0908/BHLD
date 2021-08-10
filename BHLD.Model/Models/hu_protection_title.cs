@@ -18,18 +18,21 @@ namespace BHLD.Model.Models
         public int id { get; set; }
         
         //tham chiếu phần other_list_type
-        //[ForeignKey("type_id")]
-        
-        [Required]
-        [ForeignKey("title_id")]
+       
         public int type_id { get; set; }
-        [Required]
+
+        [ForeignKey("title_id")]
+        public virtual hu_title Hu_Title { get; set; }
+
         public DateTime effect_date { get; set; }
-        [Required]
+
         public DateTime expire_date { get; set; }
+
         [StringLength(1023)]
         public string remark { get; set; }
-        
+
+        [StringLength(1)]
+        public string actfg { get; set; }
 
     }
 }

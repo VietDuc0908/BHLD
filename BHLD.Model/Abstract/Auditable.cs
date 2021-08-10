@@ -9,8 +9,6 @@ namespace BHLD.Model.Abstract
 {
     public abstract class Auditable : IAuditable
     {
-        [StringLength(1)]
-        public string actflg { get; set; }
 
         [StringLength(255)]
         public string created_by { get; set; }

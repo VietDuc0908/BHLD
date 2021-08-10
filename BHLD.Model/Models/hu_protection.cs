@@ -17,14 +17,22 @@ namespace BHLD.Model.Models
         public int id { get; set; }
 
         //Mã bảo hộ
+        [Required]
         [StringLength(50)]
         public string code { get; set; }
 
         //Tên bảo hộ
+        [Required]
         [StringLength(255)]
         public string protection_name { get; set; }
 
         [StringLength(1023)]
         public string remark { get; set; }
+
+        [StringLength(1)]
+        public string actflg
+        {
+            get; set;
+        }
     }
 }

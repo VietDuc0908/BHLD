@@ -15,11 +15,17 @@ namespace BHLD.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Required]
         public int id { get; set; }
+
+        public int user_id { get; set; }
+
         [ForeignKey("user_id")]
         public virtual se_user fk_se_user { get; set; }
+
+        public int se_report_id { get; set; }
+
         [ForeignKey("se_report_id")]
         public virtual se_report fl_se_report { get; set; }
+
     }
 }

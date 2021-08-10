@@ -14,11 +14,18 @@ namespace BHLD.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Required]
         public int id { get; set; }
+
+        public int user_id { get; set; }
+
         [ForeignKey("user_id")]
-        public virtual hu_employee fk_hu_employee { get; set; }
+        public virtual se_user Se_User { get; set; }
+
+        public int org_id { get; set; }
+
         [ForeignKey("org_id")]
         public virtual hu_organization fk_hu_organization { get; set; } //khóa ngoại với bảng đơn vị
+
+
     }
 }

@@ -17,15 +17,20 @@ namespace BHLD.Model.Models
         public int id { get; set; }
 
         //Mã chức danh
+        [Required]
         [StringLength(50)]
         public string code { get; set; }
 
 
         //Tên chức danh
+        [Required]
         [StringLength(255)]
         public string title_name { get; set; }
 
         [StringLength(1023)]
         public string remark { get; set; }
+
+        [StringLength(1)]
+        public string actflg { get; set; }
     }
 }

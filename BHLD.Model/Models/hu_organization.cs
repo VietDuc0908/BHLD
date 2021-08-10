@@ -16,15 +16,22 @@ namespace BHLD.Model.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string code { get; set; }
 
+        [Required]
         [StringLength(255)]
         public string name_vn { get; set; }
+
         public int parent_id { get; set; }
+
         public int level_id { get; set; }
+
         public DateTime dissolve_date { get; set; }
+
         public DateTime foundation_date { get; set; }
+
         public string  address { get; set; }
         
         //sort by display order
@@ -32,5 +39,8 @@ namespace BHLD.Model.Models
 
         [StringLength(1023)]
         public string remark { get; set; }
+
+        [StringLength(1)]
+        public string actfg { get; set; }
     }
 }

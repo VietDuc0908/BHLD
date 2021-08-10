@@ -15,24 +15,38 @@ namespace BHLD.Model.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
+
         //giới tính
         public int gender { get; set; }
+
         //vòng bụng
         public int belly { get; set; }
+
         //vòng mông
         public int butt { get; set; }
+
         //đai quần
         public int belt { get; set; }
+
         //vòng ngực
         public int chest { get; set; }
+
         //rộng vai
         public int shoulder { get; set; }
+
         //size of Protection Gear
-        [ForeignKey("size_id")]
+        
         public int size_id { get; set; }
+
+        [ForeignKey("size_id")]
+        public virtual hu_protection_size Hu_Protection_Size { get; set; }
 
         [StringLength(1023)]
         public string remark { get; set; }
+
+        [StringLength(1)]
+        public string actfg { get; set; }
+
     }
 
 }

@@ -16,9 +16,11 @@ namespace BHLD.Model.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
 
+        [Required]
         [StringLength(50)]
         public string code { get; set; }
 
+        [Required]
         [StringLength(255)]
         public string ward_name { get; set; }
 
@@ -27,7 +29,16 @@ namespace BHLD.Model.Models
         //[ForeignKey("province_id")]
         public int district_id { get; set; }
 
+        [ForeignKey("district_id")]
+        public virtual hu_district hu_district { get; set; }
+
+
         [StringLength(1023)]
         public string remark { get; set; }
+         
+        [StringLength(1)]
+        public string actfg { get; set; }
+
+    
     }
 }

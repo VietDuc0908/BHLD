@@ -14,8 +14,10 @@ namespace BHLD.Model.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        [Required]
         public int id { get; set; }
+
+        public int employee_id { get; set; }
+
         [ForeignKey("employee_id")] 
         public virtual hu_employee fk_hu_employee { get; set; }
 
