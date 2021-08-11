@@ -12,7 +12,7 @@ namespace BHLD.Data.Repositories
     {
 
     }
-    public class hu_titleRepository : RepositoryBase<hu_title>, Ihu_titleRepository
+    public class hu_titleRepository : RepositoryBase<hu_title>
     {
         public hu_titleRepository(IDbFactory dbFactory) : base(dbFactory)
         {

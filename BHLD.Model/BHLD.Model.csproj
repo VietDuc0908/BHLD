@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="Abstract\Auditable.cs" />
     <Compile Include="Abstract\IAuditable.cs" />
+    <Compile Include="Models\Error.cs" />
     <Compile Include="Models\hu_district.cs" />
     <Compile Include="Models\hu_employee.cs" />
     <Compile Include="Models\hu_employee_cv.cs" />

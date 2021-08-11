@@ -311,7 +311,7 @@ namespace BHLD.MVC.Areas.HelpPage
                     string serializedSampleString = reader.ReadToEnd();
                     if (mediaType.MediaType.ToUpperInvariant().Contains("XML"))
                     {
-                        serializedSampleString = TryFormatXml(serializedSampleString);
+                      //  serializedSampleString = TryFormatXml(serializedSampleString);
                     }
                     else if (mediaType.MediaType.ToUpperInvariant().Contains("JSON"))
                     {
@@ -388,19 +388,19 @@ namespace BHLD.MVC.Areas.HelpPage
         }
 
         [SuppressMessage("Microsoft.Design", "CA1031:DoNotCatchGeneralExceptionTypes", Justification = "Handling the failure by returning the original string.")]
-        private static string TryFormatXml(string str)
-        {
-            try
-            {
-                XDocument xml = XDocument.Parse(str);
-                return xml.ToString();
-            }
-            catch
-            {
-                // can't parse XML, return the original string
-                return str;
-            }
-        }
+        //private static string TryFormatXml(string str)
+        //{
+        //    try
+        //    {
+        //       // XDocument xml = XDocument.Parse(str);
+        //       // return xml.ToString();
+        //    }
+        //    catch
+        //    {
+        //        // can't parse XML, return the original string
+        //        return str;
+        //    }
+        //}
 
         private static bool IsFormatSupported(SampleDirection sampleDirection, MediaTypeFormatter formatter, Type type)
         {

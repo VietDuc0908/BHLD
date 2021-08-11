@@ -21,6 +21,8 @@ namespace BHLD.Model.Models
        
         public int type_id { get; set; }
 
+        public int title_id { get; set; }
+
         [ForeignKey("title_id")]
         public virtual hu_title Hu_Title { get; set; }
 

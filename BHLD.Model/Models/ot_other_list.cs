@@ -32,8 +32,8 @@ namespace BHLD.Model.Models
 
         public int type_id { get; set; }
 
-        //[ForeignKey("type_id")]
-        //public virtual ot_other_list_type Ot_Other_List_Type { get; set; }
+        [ForeignKey("type_id")]
+        public virtual ot_other_list_type Ot_Other_List_Type { get; set; }
 
         [StringLength(1023)]
         public string remark { get; set; }

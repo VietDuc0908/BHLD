@@ -47,6 +47,7 @@ namespace BHLD.Data
         public DbSet<se_user_permission> se_User_Permissions { set; get; }
         public DbSet<se_user_report> se_User_Reports { set; get; }
         public DbSet<synthetic> synthetics { set; get; }
+        public DbSet<Error> errors { set; get; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 

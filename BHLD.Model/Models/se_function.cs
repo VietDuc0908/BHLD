@@ -22,8 +22,8 @@ namespace BHLD.Model.Models
 
         public int group_id { get; set; }
 
-        //[ForeignKey("group_id")]
-        //public virtual se_function_group Se_Function_Group{ get; set; }
+        [ForeignKey("group_id")]
+        public virtual se_function_group Se_Function_Group{ get; set; }
 
         public int fid { get; set; }
 
