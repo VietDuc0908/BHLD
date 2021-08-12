@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHLD.Model", "BHLD.Model\BH
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHLD.Services", "BHLD.Services\BHLD.Services.csproj", "{FAE763FC-B67A-452E-8FF1-F272C7B16A0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHLD.MVC", "BHLD.MVC\BHLD.MVC.csproj", "{5E368E13-A057-4A5E-A647-4F080013F4FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BHLD.MVC", "BHLD.MVC\BHLD.MVC.csproj", "{A3AF8EF7-31D9-4B16-A815-5051952FCD77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{FAE763FC-B67A-452E-8FF1-F272C7B16A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAE763FC-B67A-452E-8FF1-F272C7B16A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAE763FC-B67A-452E-8FF1-F272C7B16A0D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E368E13-A057-4A5E-A647-4F080013F4FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E368E13-A057-4A5E-A647-4F080013F4FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E368E13-A057-4A5E-A647-4F080013F4FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E368E13-A057-4A5E-A647-4F080013F4FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AF8EF7-31D9-4B16-A815-5051952FCD77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AF8EF7-31D9-4B16-A815-5051952FCD77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AF8EF7-31D9-4B16-A815-5051952FCD77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AF8EF7-31D9-4B16-A815-5051952FCD77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
