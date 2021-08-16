@@ -1,0 +1,38 @@
+﻿@using Kendo.Mvc.UI
+@{
+    ViewBag.Title = "Title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<head>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2016.3.1118/styles/kendo.common-fiori.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2016.3.1118/styles/kendo.fiori.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2016.3.1118/styles/kendo.fiori.mobile.min.css" />
+
+    <script src="https://kendo.cdn.telerik.com/2016.3.1118/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2016.3.1118/js/kendo.all.min.js"></script>
+</head>
+
+<body>
+    <h2>Title</h2>
+
+    @(Html.Kendo().Grid<BHLD.MVC.Models.HuTitleViewModel>()
+    .Name("grid")
+    .Columns(columns =>
+    {
+        columns.Bound(p => p.id);
+        columns.Bound(p => p.code);
+        columns.Bound(p => p.title_name);
+    })
+    .Pageable()
+    .Sortable()
+    .Scrollable()
+    .Filterable(ftb => ftb.Mode(GridFilterMode.Row))
+    .HtmlAttributes(new { style = "height:550px;" })
+    .DataSource(dataSource => dataSource
+        .Ajax()
+        .PageSize(20)
+        .ServerOperation(true)
+        .Read(read => read.Action("Filter_Row_HuTitles_Read", "Grid"))
+     )
+)
+</body>
